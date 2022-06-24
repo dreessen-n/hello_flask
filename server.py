@@ -24,6 +24,7 @@ def repeat(num, str):
         i += 1
     return output
 
+# Add in an error message for page not found - 404
 @app.errorhandler(404)
 def page_not_found(e):
     return f'Sorry! No response. Try again.'

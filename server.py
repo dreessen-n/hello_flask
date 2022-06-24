@@ -34,8 +34,6 @@ if __name__=="__main__":   # Ensure this file is being run directly and not from
 
 # Need to change the port for mac to port 5001 due to AirPlay occupies port 5000
 
-
-
 # Notice how we are accessing the app object and running the route 
 # method, passing in a string that is the route that we want to add to 
 # our application. You must do this for every route that you want to 

@@ -27,7 +27,9 @@ def repeat(num, str):
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
     app.run(host='localhost', port=5001, debug=True)    # Run the app in debug mode.
 
-# Need to change the port for mac to port 5001
+# Need to change the port for mac to port 5001 due to AirPlay occupies port 5000
+
+
 
 # Notice how we are accessing the app object and running the route 
 # method, passing in a string that is the route that we want to add to 

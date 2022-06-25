@@ -22,8 +22,10 @@
         </thead>
         <tbody>
             {% for student in students %}
-                <td>{{student['name']}}</td>
-                <td>{{student['age']}}</td>
+                <tr>
+                    <td>{{student['name']}}</td>
+                    <td>{{student['age']}}</td>
+                </tr>
             {% endfor %}
         </tbody>
     </table>

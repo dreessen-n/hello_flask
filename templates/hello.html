@@ -8,8 +8,14 @@
 </head>
 <body>
     <h1>hello</h1>
+
+    <!-- To insert python-like code into flask template
+    for a variable, use double curly brackets, {{ some_variable }} -->
     <h2>{{ name}}</h2>
     <h3>{{ num }}</h3>
+
+    <!-- To insert python-like cose into flask template
+    for  an expression, use curly bracket with percent sign, {% some_expression %} -->
     {% for i in range(0, num) %}
         <p>Hello {{ name }}!</p>
     {% endfor %}

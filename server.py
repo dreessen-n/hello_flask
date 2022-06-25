@@ -27,6 +27,17 @@ def repeat(num, str):
         i += 1
     return output
 
+@app.route('/lists')
+def render_lists():
+    student_info = [
+        {'name': 'Michael', 'age': 35},
+        {'name': 'John', 'age': 30},
+        {'name': 'Mark', 'age': 25},
+        {'name': 'KB', 'age': 27}
+    ]
+    return render_template("lists.html", random_numbers = [3,1,5], students = student_info)
+
+
 # Add in an error message for page not found - 404
 @app.errorhandler(404)
 def page_not_found(e):

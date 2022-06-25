@@ -10,6 +10,10 @@ def index():
 def success():
     return 'Dojo!'
 
+@app.route('/hello/<string:name>/<int:num>')
+def hello(name, num):
+    return render_template('hello.html', name=name, num=num)
+
 @app.route('/say/<string:name>')
 def say(name):
     return f'Hello, {name.title()}'
